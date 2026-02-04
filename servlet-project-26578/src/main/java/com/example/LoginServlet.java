@@ -13,7 +13,7 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException {
         
-        // 1. Get the parameters
+        // 1. Get the parameters.
         String user = request.getParameter("username");
         String pass = request.getParameter("password");
         
