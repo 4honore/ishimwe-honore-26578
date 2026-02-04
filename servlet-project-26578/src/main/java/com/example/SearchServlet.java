@@ -13,7 +13,7 @@ public class SearchServlet extends HttpServlet {
         // 1. Get the value from the input field
         String searchTerm = request.getParameter("query");
 
-        // 2. Redirect the user to Google
+        // 2. Redirect the user to Google.
         // We append the user's input to the standard Google search URL
         if (searchTerm != null && !searchTerm.trim().isEmpty()) {
             response.sendRedirect("https://www.google.com/search?q=" + searchTerm);
